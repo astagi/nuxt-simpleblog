@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <div class="columns is-mobile">
+    <div class="is-mobile">
 
       <div
         v-for="post in posts" :key="post.slug"
@@ -28,7 +28,7 @@ export default {
     if(process.static && process.client && $payloadURL) {
       return await $axios.$get($payloadURL(route))
     }
-    const postsData = await app.$blogClient.getAllPosts();
+    const postsData = await app.$blogClient.getAllPostsHead();
     return {posts: postsData.data.simplePosts}
   }
 }

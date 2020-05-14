@@ -30,7 +30,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/client.js'
+    '~/plugins/client.js',
+    '~/plugins/globals.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -79,7 +80,7 @@ export default {
     }
   },
   sitemap: {
-    hostname: 'https://example.com',
+    hostname: 'https://dreamy-edison-0abb5e.netlify.app',
     routes: async () => {
       const client = new BlogClient();
       const allPosts = await client.getAllPosts();

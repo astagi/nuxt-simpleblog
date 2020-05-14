@@ -2,6 +2,10 @@
 
 > A simple blog with Nuxt, Buefy and Strapi
 
+## Live site
+
+[Click here to see the live site](https://dreamy-edison-0abb5e.netlify.app)
+
 ## Build Setup
 
 ```bash

@@ -3,7 +3,7 @@ import { createApolloFetch } from 'apollo-fetch'
 export default class BlogClient {
 
   constructor () {
-    this.apolloFetch = createApolloFetch({ uri: process.env.BACKEND_ENDPOINT });
+    this.apolloFetch = createApolloFetch({ uri: process.env.NUXT_ENV_BACKEND_URL });
   }
 
   getAllPostsHead () {

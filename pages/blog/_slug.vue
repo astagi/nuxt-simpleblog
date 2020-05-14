@@ -1,9 +1,9 @@
 <template>
   <section class="section">
-    <div class="columns is-mobile">
+    <div class="is-mobile">
       <div>
         <h2>{{post.title}}</h2>
-        <p>{{post.content}}</p>
+        <vue-markdown>{{post.content}}</vue-markdown>
       </div>
     </div>
   </section>
@@ -13,7 +13,7 @@
 import Card from '~/components/Card'
 
 export default {
-  name: 'HomePage',
+  name: 'BlogPost',
   data () {
     post: undefined
   },
